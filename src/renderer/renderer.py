@@ -5,7 +5,7 @@ import torch.nn.functional as F
 from pytorch3d.structures import Meshes
 from pytorch3d.io import load_obj
 from pytorch3d.renderer.mesh import rasterize_meshes
-from src.renderer.util import face_vertices, vertex_normals, batch_orth_proj
+from .util import face_vertices, vertex_normals, batch_orth_proj
 import pickle
 
 def keep_vertices_and_update_faces(faces, vertices_to_keep):
